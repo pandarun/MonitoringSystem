@@ -1,0 +1,20 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.1.0">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MonitoringSystem.AppHost</RootNamespace>
+    <IsAspireHost>true</IsAspireHost>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Aspire.Hosting.AppHost is now included automatically by the SDK -->
+    <PackageReference Include="Aspire.Hosting.Kafka" Version="13.1.0" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="13.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonitoringSystem.Worker\MonitoringSystem.Worker.csproj" />
+    <ProjectReference Include="..\MonitoringSystem.Producer\MonitoringSystem.Producer.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>MonitoringSystem.Core</RootNamespace>
+  </PropertyGroup>
+
+</Project>

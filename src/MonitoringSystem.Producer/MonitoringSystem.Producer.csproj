@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <RootNamespace>MonitoringSystem.Producer</RootNamespace>
+    <UserSecretsId>MonitoringSystem.Producer</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Confluent.Kafka" Version="13.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonitoringSystem.ServiceDefaults\MonitoringSystem.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\MonitoringSystem.Core\MonitoringSystem.Core.csproj" />
+  </ItemGroup>
+
+</Project>

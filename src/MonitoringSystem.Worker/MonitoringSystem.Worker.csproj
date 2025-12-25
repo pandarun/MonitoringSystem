@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <RootNamespace>MonitoringSystem.Worker</RootNamespace>
+    <UserSecretsId>MonitoringSystem.Worker</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonitoringSystem.ServiceDefaults\MonitoringSystem.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\MonitoringSystem.Core\MonitoringSystem.Core.csproj" />
+    <ProjectReference Include="..\MonitoringSystem.Kafka\MonitoringSystem.Kafka.csproj" />
+    <ProjectReference Include="..\MonitoringSystem.Data\MonitoringSystem.Data.csproj" />
+  </ItemGroup>
+
+</Project>
